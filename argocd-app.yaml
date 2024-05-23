@@ -10,4 +10,4 @@ spec:
     source:
         path: kustomize-installation
         repoURL: https://github.com/danirdd92/argo_HA.git
-        targetRevision: main
+        targetRevision: HEAD
