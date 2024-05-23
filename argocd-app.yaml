@@ -9,5 +9,5 @@ spec:
     project: default
     source:
         path: kustomize-installation
-        repoURL: https://github.com/PacktPublishing/ArgoCD-in-Practice.git
+        repoURL: https://github.com/danirdd92/argo_HA.git
         targetRevision: main
