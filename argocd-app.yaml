@@ -1,4 +1,4 @@
-apiversion: argoproj.io/v1alpha1
+apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
   name: argocd
@@ -8,6 +8,6 @@ spec:
         server: https://kubernetes.default.svc
     project: default
     source:
-        path: resources/namespace.yaml
-        repoURL: https://github.com/danirdd92/argo_HA.git
-        targetRevision: HEAD
+        path: kustomize-installation
+        repoURL: https://github.com/PacktPublishing/ArgoCD-in-Practice.git
+        targetRevision: main
