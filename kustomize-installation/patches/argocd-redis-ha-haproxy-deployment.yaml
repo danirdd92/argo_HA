@@ -1,7 +1,8 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: argocd-repo-server
+  name: argocd-redis-ha-haproxy
+  namespace: argocd
 spec:
   replicas: 2
   template:
@@ -9,5 +10,5 @@ spec:
       containers:
         - name: argocd-application-controller
           env:
-            - name: ARGOCD_REPO_SERVER_REPLICAS
+            - name: ARGOCD_REDIS_HA_HAPROXY_REPLICAS
               value: "2"
