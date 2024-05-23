@@ -9,4 +9,5 @@ spec:
     project: default
     source:
         path: resources/namespace.yaml
-        repoURL:
+        repoURL: https://github.com/danirdd92/argo_HA.git
+        targetRevision: HEAD
